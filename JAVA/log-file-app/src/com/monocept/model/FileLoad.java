@@ -1,0 +1,45 @@
+package com.monocept.model;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+public class FileLoad {
+
+	public static void main(String args[]) throws IOException {
+
+		File input = new File("resources//db_app.log");
+		FileReader fr = null;
+		Scanner ob = new Scanner(System.in);
+		String SearchWord, str;
+		System.out.println("Enter the word to search(INFO/WARNING/ERROR:)");
+		SearchWord = ob.nextLine();
+		try {
+			fr = new FileReader(input);
+			BufferedReader br = new BufferedReader(fr);
+
+			while ((str = br.readLine()) != null) {
+				if (SearchWord.equals("INFO") || SearchWord.equals("WARNING") || SearchWord.equals("ERROR")) {
+					if (str.contains(SearchWord))
+						System.out.println(str);
+				}
+			}
+
+		} catch (FileNotFoundException ex) {
+			Logger.getLogger(FileLoad.class.getName()).log(Level.SEVERE, null, ex);
+
+		} catch (IOException ex) {
+			Logger.getLogger(FileLoad.class.getName()).log(Level.SEVERE, null, ex);
+
+		} finally {
+			fr.close();
+			ob.close();
+
+		}
+	}
+}

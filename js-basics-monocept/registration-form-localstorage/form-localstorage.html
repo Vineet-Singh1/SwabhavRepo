@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="form-localstorage.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form Local Storage</title>
+</head>
+
+<body>
+     
+   
+    <div style="text-align: center;" id="reg-form">
+        <form id="form">
+            <h1 style="text-align: center;">Registration Form</h1>
+            <label for="user-name">User Name</label>
+            <input type="text" id="name" name="user-name" placeholder="Sachin Verma" required><br>
+            <span id="sname" style="color: red;"></span>
+            <br></br>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="pass" name="password" value=""><br>
+                <span id="spass" style="color: red;"></span>
+                <br></br>
+                <label for=" confirm-password">Confirm-Password</label>
+                <input type="password" id="confirmpass" name="password" value=""><br>
+                <span id="scon" style="color: red;" ></span>
+                <br></br>
+
+            </div>
+            <div>
+                <label for="educational-qualification">Educational Qualification</label>
+                <select name="eduactional-qualification" >
+
+                    <option value="0" selected disabled>Select Qualification</option>
+                    <option value="10th" >10th</option>
+                    <option value="10+2">10+2</option>
+                    <option value="graduation">Graduation</option>
+                    <option value="post-graduation">Post-Graduation</option>
+
+                </select>
+                <br></br>
+            </div>
+            <div>
+                <label for="email">Email-Address</label>
+                <input type="email" id="email" name="email-address" value="" placeholder="rakesh@gmail.com" required><br>
+                <span id="semail" style="color: red;"></span>
+                <br></br>
+            </div>
+             
+            <label for="agree">I agree to all the terms and conditions</label>
+            <input type="checkbox" name="agree" required>
+            <button type="submit">Submit</button>
+
+
+        </form>
+
+    </div>
+    <script src="form-localstorage.js"></script>
+</body>
+
+</html>

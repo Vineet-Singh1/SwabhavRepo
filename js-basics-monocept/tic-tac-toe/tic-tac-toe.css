@@ -1,0 +1,57 @@
+body {
+    background: gray;
+    font-family: sans-serif;
+}
+
+.messagesection {
+    height: 50px;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.gameboard {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 300px;
+    height: 300px;
+}
+
+.row {
+    height: 32%;
+
+}
+
+.col {
+    height: 100%;
+    width: 32%;
+    border: 2px solid white;
+    float: left;
+    font-size: 70px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn{
+    text-align: center;
+    padding: 5px;
+    background-color: green;
+
+}
+#btn{
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 100%;
+    box-shadow: inset;
+}
+
+.messagesection{
+    font-style: italic;
+    font-size: xx-large;
+}

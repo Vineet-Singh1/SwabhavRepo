@@ -1,0 +1,13 @@
+#container {
+    text-align: center;
+    width: auto;
+}
+
+h1 {
+    text-align: center;
+    font-style: italic;
+}
+
+body {
+    background-color: aquamarine;
+}

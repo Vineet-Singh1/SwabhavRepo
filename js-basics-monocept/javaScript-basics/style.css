@@ -1,0 +1,39 @@
+.error{
+    padding:10px;
+    color:red;
+    border: 1px dotted;
+}
+
+.success{
+   padding:10px;
+   color:blue;
+   border: 1px dotted;
+}
+
+body{
+    background: #333;
+}
+
+.clock{
+    text-align: center;
+    margin: 20px auto;
+    color:yellow;
+    font-family: arial;
+}
+
+.clock span{
+    padding :20px;
+    font-size: 4em;
+    background: #444;
+}
+
+.button{
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 3px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }

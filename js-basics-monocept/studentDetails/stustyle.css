@@ -1,0 +1,17 @@
+body{
+    background : aliceblue;
+    text-align: center;
+}
+
+div{
+    display: inline-block;
+}
+
+table{
+    display: block;
+}
+
+th,td{
+    border: 1px solid black;
+    padding: 5px;
+}

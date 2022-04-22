@@ -1,0 +1,44 @@
+
+
+h1{
+    color: black;
+    font-style: italic;
+    
+}
+#even{
+    background-color: skyblue;
+}
+
+#odd{
+    background-color: yellow;
+}
+
+#btnClick{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 8px 6px;
+    cursor: pointer;
+}
+.delete{
+    background-color: #f44336; 
+    border: none;
+    color: white;
+    padding: 1px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    float: right;
+
+    font-size: 15px;
+    
+}
+
+#txt{
+    
+}
